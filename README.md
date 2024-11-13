@@ -33,18 +33,22 @@ Model-based Analysis of Genome-wide CRISPR/Cas9 Knockout (MAGeCK) (https://sourc
 
 General descriptions of pipelines within each notebook are described below.
 
+### Assign_Barcodes.ipynb
+
+Starting with initial sequencing files from sequencing of genomic DNA and mRNA from the CRITR-seq screen, this code checks each read for a perfect match to a gRNA sequence from the GeCKO library. Tables are generated containing the counts for each GeCKO gRNA sequence in each replicate. Additionally, a list of the non-targeting gRNAs is generated. The counts table and list of non-targeting guides are formatted for input to MAGeCK. Finally, figures are generated to visualize the distribution of gRNA representation across the libraries, as well as correlation between replicates. 
+
 ### CapLength_Analysis.ipynb
 
-Analysis of 5' RACE sequencing data from flu mRNAs, with or without siRNA targeting *NELFB*.
+Analysis of 5' RACE sequencing data from flu mRNAs, with or without siRNA targeting *NELFB*. Reads were matched to flu mRNAs, and the sequence upstream of the flu mRNA +1 position was stored as the capped 5' sequence snatched from the host. Duplicate cap sequences were dropped, and the distribution of the lengths of unique cap sequences were compared between samples.
 
 ### Flow_Analysis.ipynb
 
 Analysis of flow cytometry data, after initial gate to exclude debris was drawn in FlowJo and the data were exported to csv files. Thresholds for interferon positivity and influenza A protein staining were set on uninfected controls, expected to have no production of interferons or staining for flu proteins.
 
+### MAGeCK_Analysis.ipynb
+
+
+
 ### qPCR_Analysis.ipynb
 
 Analysis of qPCR data exported to csv files.
-
-### Assign_Barcodes.ipynb
-
-### MAGeCK_Analysis.ipynb
