@@ -4,7 +4,7 @@ This repository contains the code used to analyze data from a genome-wide CRITR-
 
 Analyses are found in different Jupyter notebooks, with descriptions below. Figures generated can be seen in the Jupyter notebooks.
 
-The Data folder in this repository includes all qPCR csv files. Sequencing files can be downloaded from ___ at accession ___.
+The Data folder in this repository includes all qPCR csv files. Sequencing files can be downloaded from GEO at accession GSE281730.
 
 ## Dependencies
 
